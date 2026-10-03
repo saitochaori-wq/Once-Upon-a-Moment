@@ -14,3 +14,12 @@ body {
     height: 100vh;
     background: #02020b;
 }
+.stars {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 50%;
+    top: 30%;
+    left: 50%;
+}
