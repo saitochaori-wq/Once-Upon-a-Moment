@@ -74,17 +74,13 @@ body {
         0 0 25px rgba(100, 160, 255, 0.8),
         0 0 45px rgba(80, 130, 255, 0.45);
 
-  animation:
+ animation:
     starAppear 1.5s ease-out forwards,
     starGather var(--gather-time) linear forwards;
 
 animation-delay:
     var(--delay),
     var(--gather-delay);
-    animation-delay:
-        var(--delay),
-        calc(var(--delay) + 1.5s);
-}
 
 
 /* =========================
