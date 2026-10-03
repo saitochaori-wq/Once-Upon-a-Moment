@@ -15,11 +15,12 @@ body {
     background: #02020b;
 }
 .stars {
-    position: absolute;
-    width: 5px;
-    height: 5px;
+    position: fixed;
+    width: 20px;
+    height: 20px;
     background: white;
     border-radius: 50%;
-    top: 30%;
-    left: 50%;
+    top: 100px;
+    left: 100px;
+    z-index: 9999;
 }
