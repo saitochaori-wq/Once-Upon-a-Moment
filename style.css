@@ -16,11 +16,12 @@ body {
 }
 .stars {
     position: fixed;
-    width: 4px;
-    height: 4px;
+    width: 20px;
+    height: 20px;
     background: white;
     border-radius: 50%;
-    top: 30%;
+    top: 50%;
     left: 50%;
-    z-index: 10;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
 }
