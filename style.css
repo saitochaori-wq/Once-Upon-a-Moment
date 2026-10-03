@@ -1,1 +1,419 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+    background: #02030c;
+}
+
+.intro {
+    position: relative;
+    width: 100%;
+    height: 100dvh;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 50% 45%,
+            #304b91 0%,
+            #172b64 30%,
+            #081536 65%,
+            #02030c 100%
+        );
+}
+
+
+/* =========================
+   STARS
+========================= */
+
+.stars {
+    position: absolute;
+    inset: 0;
+}
+
+.stars span {
+    position: absolute;
+    display: block;
+
+    width: 4px;
+    height: 4px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    opacity: 0;
+
+    filter: blur(0.6px);
+
+    box-shadow:
+        0 0 6px white,
+        0 0 14px rgba(180, 215, 255, 1),
+        0 0 28px rgba(100, 160, 255, 0.8);
+
+    animation: starAppear 1.5s ease-out forwards;
+}
+
+
+/* STAR POSITIONS */
+
+.stars span:nth-child(1) {
+    width: 3px;
+    height: 3px;
+    left: 8%;
+    top: 18%;
+    animation-delay: 0.2s;
+}
+
+.stars span:nth-child(2) {
+    width: 5px;
+    height: 5px;
+    left: 22%;
+    top: 30%;
+    animation-delay: 0.5s;
+}
+
+.stars span:nth-child(3) {
+    width: 2px;
+    height: 2px;
+    left: 35%;
+    top: 10%;
+    animation-delay: 0.8s;
+}
+
+.stars span:nth-child(4) {
+    width: 6px;
+    height: 6px;
+    left: 52%;
+    top: 15%;
+    animation-delay: 1.1s;
+}
+
+.stars span:nth-child(5) {
+    width: 3px;
+    height: 3px;
+    left: 72%;
+    top: 12%;
+    animation-delay: 1.4s;
+}
+
+.stars span:nth-child(6) {
+    width: 4px;
+    height: 4px;
+    left: 90%;
+    top: 25%;
+    animation-delay: 1.7s;
+}
+
+.stars span:nth-child(7) {
+    width: 2px;
+    height: 2px;
+    left: 12%;
+    top: 45%;
+    animation-delay: 2s;
+}
+
+.stars span:nth-child(8) {
+    width: 7px;
+    height: 7px;
+    left: 28%;
+    top: 52%;
+    animation-delay: 2.3s;
+}
+
+.stars span:nth-child(9) {
+    width: 3px;
+    height: 3px;
+    left: 43%;
+    top: 38%;
+    animation-delay: 2.6s;
+}
+
+.stars span:nth-child(10) {
+    width: 5px;
+    height: 5px;
+    left: 60%;
+    top: 42%;
+    animation-delay: 2.9s;
+}
+
+.stars span:nth-child(11) {
+    width: 2px;
+    height: 2px;
+    left: 78%;
+    top: 48%;
+    animation-delay: 3.2s;
+}
+
+.stars span:nth-child(12) {
+    width: 8px;
+    height: 8px;
+    left: 92%;
+    top: 55%;
+    animation-delay: 3.5s;
+}
+
+.stars span:nth-child(13) {
+    width: 3px;
+    height: 3px;
+    left: 8%;
+    top: 70%;
+    animation-delay: 3.8s;
+}
+
+.stars span:nth-child(14) {
+    width: 5px;
+    height: 5px;
+    left: 25%;
+    top: 78%;
+    animation-delay: 4.1s;
+}
+
+.stars span:nth-child(15) {
+    width: 2px;
+    height: 2px;
+    left: 40%;
+    top: 68%;
+    animation-delay: 4.4s;
+}
+
+.stars span:nth-child(16) {
+    width: 6px;
+    height: 6px;
+    left: 55%;
+    top: 72%;
+    animation-delay: 4.7s;
+}
+
+.stars span:nth-child(17) {
+    width: 3px;
+    height: 3px;
+    left: 68%;
+    top: 65%;
+    animation-delay: 5s;
+}
+
+.stars span:nth-child(18) {
+    width: 7px;
+    height: 7px;
+    left: 85%;
+    top: 75%;
+    animation-delay: 5.3s;
+}
+
+.stars span:nth-child(19) {
+    width: 2px;
+    height: 2px;
+    left: 15%;
+    top: 8%;
+    animation-delay: 5.6s;
+}
+
+.stars span:nth-child(20) {
+    width: 4px;
+    height: 4px;
+    left: 65%;
+    top: 8%;
+    animation-delay: 5.9s;
+}
+
+.stars span:nth-child(21) {
+    width: 3px;
+    height: 3px;
+    left: 48%;
+    top: 25%;
+    animation-delay: 6.2s;
+}
+
+.stars span:nth-child(22) {
+    width: 5px;
+    height: 5px;
+    left: 75%;
+    top: 35%;
+    animation-delay: 6.5s;
+}
+
+.stars span:nth-child(23) {
+    width: 2px;
+    height: 2px;
+    left: 32%;
+    top: 60%;
+    animation-delay: 6.8s;
+}
+
+.stars span:nth-child(24) {
+    width: 6px;
+    height: 6px;
+    left: 58%;
+    top: 58%;
+    animation-delay: 7.1s;
+}
+
+.stars span:nth-child(25) {
+    width: 3px;
+    height: 3px;
+    left: 95%;
+    top: 8%;
+    animation-delay: 7.4s;
+}
+
+
+@keyframes starAppear {
+
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    60% {
+        opacity: 1;
+        transform: scale(1.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* =========================
+   CASTLE
+========================= */
+
+.castle {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform:
+        translate(-50%, -35%)
+        scale(1);
+
+    font-size: clamp(90px, 30vw, 150px);
+
+    opacity: 0;
+
+    z-index: 8;
+
+    filter:
+        drop-shadow(0 0 10px rgba(190, 220, 255, 0.9))
+        drop-shadow(0 0 30px rgba(100, 150, 255, 0.8));
+
+    animation: castleAppear 3s ease-out forwards;
+
+    animation-delay: 4s;
+}
+
+@keyframes castleAppear {
+
+    0% {
+        opacity: 0;
+        transform:
+            translate(-50%, -35%)
+            scale(0.8);
+    }
+
+    60% {
+        opacity: 0.8;
+        transform:
+            translate(-50%, -38%)
+            scale(1.05);
+    }
+
+    100% {
+        opacity: 0.7;
+        transform:
+            translate(-50%, -35%)
+            scale(1);
+    }
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.title {
+    position: absolute;
+
+    left: 50%;
+    top: 53%;
+
+    transform: translate(-50%, -50%);
+
+    width: 94%;
+
+    text-align: center;
+
+    color: white;
+
+    opacity: 0;
+
+    z-index: 10;
+
+    text-shadow:
+        0 0 10px white,
+        0 0 25px rgba(150, 190, 255, 0.9),
+        0 0 50px rgba(100, 150, 255, 0.6);
+
+    animation: titleAppear 3s ease-out forwards;
+
+    animation-delay: 7s;
+}
+
+.title h1 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(32px, 9vw, 70px);
+
+    font-weight: 400;
+
+    letter-spacing: 2px;
+}
+
+.title p {
+    margin-top: 16px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: clamp(11px, 3.2vw, 18px);
+
+    letter-spacing: 2px;
+}
+
+@keyframes titleAppear {
+
+    0% {
+        opacity: 0;
+        transform:
+            translate(-50%, -50%)
+            scale(0.9);
+    }
+
+    60% {
+        opacity: 1;
+        transform:
+            translate(-50%, -50%)
+            scale(1.03);
+    }
+
+    100% {
+        opacity: 1;
+        transform:
+            translate(-50%, -50%)
+            scale(1);
+    }
+}
