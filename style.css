@@ -364,19 +364,23 @@ animation-delay:
 @keyframes starGather {
 
     0% {
-        left: var(--left);
-        top: var(--top);
-        transform: scale(1);
+        transform: translate3d(0, 0, 0) scale(1);
     }
 
     70% {
-        transform: scale(1.15);
+        transform: translate3d(
+            calc(var(--move-x) * 0.72),
+            calc(var(--move-y) * 0.72),
+            0
+        ) scale(1.05);
     }
 
     100% {
-        left: 50%;
-        top: 50%;
-        transform: scale(0.7);
+        transform: translate3d(
+            var(--move-x),
+            var(--move-y),
+            0
+        ) scale(0.65);
     }
 }
 /* =========================
