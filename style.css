@@ -15,32 +15,65 @@ body {
     background: #02020b;
 }
 .stars {
-    position: fixed;
-    width: 5px;
-    height: 5px;
-    background: white;
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    z-index: 9999;
-
-    animation: starAppear 2s ease-out forwards;
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
 }
 
-@keyframes starAppear {
+.stars span {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 8px 2px white;
+    opacity: 0;
+    animation: starTwinkle 2s ease-in-out forwards;
+}
+
+.stars span:nth-child(1) {
+    top: 25%;
+    left: 30%;
+    animation-delay: 0.5s;
+}
+
+.stars span:nth-child(2) {
+    top: 20%;
+    left: 65%;
+    animation-delay: 1s;
+}
+
+.stars span:nth-child(3) {
+    top: 35%;
+    left: 75%;
+    animation-delay: 1.5s;
+}
+
+.stars span:nth-child(4) {
+    top: 30%;
+    left: 45%;
+    animation-delay: 2s;
+}
+
+.stars span:nth-child(5) {
+    top: 45%;
+    left: 20%;
+    animation-delay: 2.5s;
+}
+
+@keyframes starTwinkle {
     0% {
         opacity: 0;
-        transform: translate(-50%, -50%) scale(0);
+        transform: scale(0);
     }
 
     50% {
         opacity: 1;
-        transform: translate(-50%, -50%) scale(1.5);
+        transform: scale(1.5);
     }
 
     100% {
-        opacity: 1;
-        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.8;
+        transform: scale(1);
     }
 }
