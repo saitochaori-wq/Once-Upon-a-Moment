@@ -12,21 +12,21 @@ body {
 
 body {
     overflow: hidden;
-   background:
-    radial-gradient(
-        circle at 50% 45%,
-        #243b70 0%,
-        #101d46 35%,
-        #050b20 70%,
-        #02030c 100%
-    );
+    background: #02030c;
 }
 
 .intro {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background: #02020b;
+
+    background: radial-gradient(
+        circle at 50% 45%,
+        #243b70 0%,
+        #101d46 35%,
+        #050b20 70%,
+        #02030c 100%
+    );
 }
 
 /* STAR FIELD */
