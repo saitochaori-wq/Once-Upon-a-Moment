@@ -1,76 +1,16 @@
 * {
-マージン: 0;
-パディング: 0;
-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-体 {
-オーバーフロー: 非表示;
-背景: #02020b;
-font-family: Georgia, serif;
+body {
+    overflow: hidden;
+    background: #02020b;
 }
 
 .intro {
-幅: 100vw;
-高さ：100vh;
-背景: 放射状グラデーション(中央下部の円、#171735、#02020b 70%);
-表示: フレックス;
-flex-direction: column;
-アイテムの配置: 中央;
-justify-content: center;
-位置: 相対;
-}
-
-。城 {
-フォントサイズ: 100px;
-不透明度: 0;
-transform: translateY(30px);
-animation: castleAppear 3s ease forwards;
-アニメーション遅延: 2秒;
-}
-
-。タイトル {
-text-align: center;
-色：白
-不透明度: 0;
-transform: translateY(20px);
-animation: titleAppear 2s ease forwards;
-アニメーション遅延: 4秒;
-}
-
-.title h1 {
-フォントサイズ: 42px;
-フォントの太さ: 標準;
-文字間隔: 2px;
-}
-
-.title h2 {
-フォントサイズ: 25px;
-フォントの太さ: 標準;
-フォントスタイル: 斜体;
-margin-top: 5px;
-}
-
-@keyframes castleAppear {
-から {
-不透明度: 0;
-transform: translateY(30px) scale(0.9);
-}
-
-に {
-不透明度: 1;
-変換: translateY(0) scale(1);
-}
-}
-
-@keyframes titleAppear {
-から {
-不透明度: 0;
-transform: translateY(20px);
-}
-
-に {
-不透明度: 1;
-変換: translateY(0);
-}
+    width: 100vw;
+    height: 100vh;
+    background: #02020b;
 }
